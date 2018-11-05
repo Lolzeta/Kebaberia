@@ -1,0 +1,41 @@
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content:flex-start;
+}
+
+#contenedor div{
+    border: solid black 2px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+#div1{
+    height: 100px;
+    width: 100%;
+
+}
+
+#div2{
+    height: 700px;
+    width: 25%;
+}
+
+#div3{
+    height: 700px;
+    width: 50%;
+}
+
+#div4{
+    height: 700px;
+    width: 25%;
+}
+
+#div5{
+    height: 150px;
+    width: 100%;
+}
