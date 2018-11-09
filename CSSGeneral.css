@@ -1,41 +1,50 @@
-#contenedor{
+body{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+header{
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    border-bottom: solid black 3px;
+}
+
+#logo{
+    grid-column: 1/8;
+    margin-left: 1.5em;
+}
+
+nav{
+    grid-column: 10/13;
+}
+
+#navegador{
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
-    justify-content:flex-start;
+    align-content: flex-start;
+    justify-content: space-around;
 }
 
-#contenedor div{
-    border: solid black 2px;
-    box-sizing: border-box;
+main{
+    grid-column: 4/10;
+    background-color: pink;
 }
 
-body{
-    background-color: white;
+#aside_izquierda{
+    grid-column: 1/4;
+    background-color: orange;
+    border-right: solid black 3px;
 }
 
-#div1{
-    height: 100px;
-    width: 100%;
-
+#aside_derecha{
+    grid-column: 10/13;
+    background-color: red;
+    border-left: solid black 3px;
 }
 
-#div2{
-    height: 700px;
-    width: 25%;
-}
-
-#div3{
-    height: 700px;
-    width: 50%;
-}
-
-#div4{
-    height: 700px;
-    width: 25%;
-}
-
-#div5{
-    height: 150px;
-    width: 100%;
+footer{
+    border-top:solid black 3px; 
+    grid-column: 1/13;
+    background-color: blue;
 }
