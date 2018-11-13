@@ -16,15 +16,24 @@ header{
 }
 
 nav{
-    grid-column: 10/13;
+    grid-column: 9/13;
 }
 
 #navegador{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-around;
 }
+
+nav ul{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    width: 100%;
+}
+
 
 main{
     grid-column: 4/10;
@@ -47,4 +56,27 @@ footer{
     border-top:solid black 3px; 
     grid-column: 1/13;
     background-color: blue;
+}
+
+#filtros{
+    width:100%;
+}
+
+#fdiv1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+#fdiv1 div{
+    margin-top: 5%;
+    grid-column: 2/4;
+}
+#fdiv2{
+    display:grid;
+    grid-template-columns: repeat(20,1fr);
+}
+
+#fdiv2 div{
+    grid-column: 6/21;
+    margin-top: 0.5%;
 }
