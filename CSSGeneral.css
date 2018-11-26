@@ -37,25 +37,21 @@ nav ul{
 
 main{
     grid-column: 4/10;
-    background-color: pink;
 }
 
 #aside_izquierda{
     grid-column: 1/4;
-    background-color: orange;
     border-right: solid black 3px;
 }
 
 #aside_derecha{
     grid-column: 10/13;
-    background-color: red;
     border-left: solid black 3px;
 }
 
 footer{
     border-top:solid black 3px; 
-    grid-column: 1/13;
-    background-color: blue;
+    grid-column: 1/13;  
 }
 
 #filtros{
