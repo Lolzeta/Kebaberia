@@ -1,82 +1,84 @@
-body{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-}
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
 
-header{
-    grid-column: 1/13;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    border-bottom: solid black 3px;
-}
+header {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-bottom: solid black 3px; }
 
-#logo{
-    grid-column: 1/8;
-    margin-left: 1.5em;
-}
+#logo {
+  grid-column: 1/8;
+  margin-left: 1.5em; }
 
-nav{
-    grid-column: 9/13;
-}
+nav {
+  grid-column: 9/13; }
 
-#navegador{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-around;
-}
+#navegador {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around; }
 
-nav ul{
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-around;
-    width: 100%;
-}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%; }
 
+main {
+  grid-column: 1/13;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #e2d6d6; }
 
-main{
-    grid-column: 4/10;
-    background-color: pink;
-}
+.principal {
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  grid-column: 1/13; }
 
-#aside_izquierda{
-    grid-column: 1/4;
-    background-color: orange;
-    border-right: solid black 3px;
-}
+footer {
+  border-top: solid black 3px;
+  grid-column: 1/13;
+  background-color: #ccc1c1; }
 
-#aside_derecha{
-    grid-column: 10/13;
-    background-color: red;
-    border-left: solid black 3px;
-}
+.lateralIzq {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  grid-column: 2/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
-footer{
-    border-top:solid black 3px; 
-    grid-column: 1/13;
-    background-color: blue;
-}
+.filtros {
+  border-radius: 1em 1em 1em 1em;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 10px; }
 
-#filtros{
-    width:100%;
-}
+.lateralDer {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  grid-column: 9/12;
+  display: flex; }
 
-#fdiv1{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
+aside {
+  grid-column: 2/5; }
 
-#fdiv1 div{
-    margin-top: 5%;
-    grid-column: 2/4;
-}
-#fdiv2{
-    display:grid;
-    grid-template-columns: repeat(20,1fr);
-}
+section {
+  grid-column: 6/12; }
 
-#fdiv2 div{
-    grid-column: 6/21;
-    margin-top: 0.5%;
-}
+.comidas {
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+@media screen and (max-width: 300px) {
+  section {
+    grid-column: 2/12; }
+
+  aside {
+    grid-column: 2/12; } }
+
+/*# sourceMappingURL=CSSGeneral.css.map */
